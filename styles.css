@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 300%;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 200%;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  color: #ddd;
+  padding: 20px;
+}
+
+header > .brandName {
+  font-size: 170%;
+}
+
+header .nav-item {
+  list-style: none;
+  display: inline-block;
+}
+
+header .nav-link {
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(199, 199, 199);
+  transition: all 0.3s;
+}
+
+header .nav-link:hover {
+  color: #fff;
+}
+
+.search {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search-home {
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.search-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.dropdown {
+  padding: 10px 25px 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+.track-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: left;
+}
+
+.track {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.track span {
+  font-size: 25px;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-right: 1px solid rgb(177, 177, 177);
+}
+
+.track a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.track small {
+  display: block;
+  font-weight: 300;
+}
