@@ -5,9 +5,8 @@
 }
 
 body {
-  background-color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/images/bg1.jpg');
+    url('/images/bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   color: #ddd;
@@ -29,10 +28,9 @@ h2 {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
   font-size: 19px;
   color: #ddd;
   padding: 20px;
@@ -41,17 +39,13 @@ header {
 
 header > .brandName {
   font-size: 170%;
-  /* border: 1px solid #fff; */
-}
-
-header > ul {
-  /* border: 1px solid #fff; */
-  justify-self: right;
+  margin-right: 10px;
 }
 
 header .nav-item {
   list-style: none;
   display: inline-block;
+  margin: 5px 0;
 }
 
 header .nav-link {
@@ -64,16 +58,6 @@ header .nav-link {
 header .nav-link:hover {
   color: #fff;
 }
-
-/* .search {
-  background-color: #eee;
-  color: rgb(65, 65, 65);
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  outline: none;
-  border: 1px solid rgb(177, 177, 177);
-} */
 
 .search-form {
   display: flex;
@@ -88,7 +72,7 @@ header .nav-link:hover {
   padding: 10px 20px;
   font-size: 18px;
   outline: none;
-  border: 1px solid rgb(177, 177, 177);
+  border: 1px solid rgb(200, 200, 200);
 }
 
 .search-button {
@@ -99,7 +83,7 @@ header .nav-link:hover {
   font-size: 18px;
   padding: 10px 20px;
   outline: none;
-  border: 1px solid rgb(177, 177, 177);
+  border: 1px solid rgb(200, 200, 200);
   transition: all 0.3s;
 }
 
@@ -115,7 +99,7 @@ header .nav-link:hover {
   padding: 10px 25px 10px 20px;
   font-size: 18px;
   outline: none;
-  border: 1px solid rgb(177, 177, 177);
+  border: 1px solid rgb(200, 200, 200);
 }
 
 .dropdown:focus {
@@ -194,19 +178,28 @@ footer > a {
   font-size: 120%;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 691px) {
   header {
-    grid-template-columns: 1fr 3fr;
+    flex-wrap: wrap;
   }
 
-  .search-home,
-  .search-button,
+  header > .brandName {
+    margin-bottom: 10px;
+  }
+
+  .search-home {
+    width: 200px;
+    padding: 10px;
+  }
+
+  .search-button {
+    width: 50px;
+    padding: 10px;
+  }
+
   .dropdown {
-    display: block;
-  }
-
-  .search-form {
-    flex-direction: column;
+    width: 90px;
+    padding: 10px 5px;
   }
 
   .track-list {
