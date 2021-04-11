@@ -12,7 +12,7 @@ body {
   color: #ddd;
   font-size: 28px;
   font-weight: 300;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Charm', cursive;
   text-align: center;
 }
 
@@ -172,10 +172,25 @@ footer > a {
   color: #eece1a;
 }
 
+.lyrics {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 .author {
   margin-top: 15px;
   color: #fff;
   font-size: 120%;
+}
+
+.redirect {
+  text-decoration: none;
+  color: #ddd;
+  transition: all 0.3s;
+}
+
+.redirect:hover {
+  color: #eece1a;
 }
 
 @media (max-width: 691px) {
