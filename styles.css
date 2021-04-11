@@ -178,14 +178,14 @@ footer > a {
 }
 
 .author {
-  margin-top: 15px;
-  color: #fff;
   font-size: 120%;
 }
 
 .redirect {
+  display: block;
+  margin-top: 15px;
   text-decoration: none;
-  color: #ddd;
+  color: #fff;
   transition: all 0.3s;
 }
 
